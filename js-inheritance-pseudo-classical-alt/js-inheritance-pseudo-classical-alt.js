@@ -53,7 +53,7 @@ FlyingHorse.prototype = Object.create(Horse.prototype);
 FlyingHorse.prototype.constructor = FlyingHorse;
 
 FlyingHorse.prototype.oldGoSomewhere = Horse.prototype.goSomewhere;
-}
+
 
 FlyingHorse.prototype.goSomewhere = function(destination, milesToDestination) {
   if (milesToDestination < 10) {
