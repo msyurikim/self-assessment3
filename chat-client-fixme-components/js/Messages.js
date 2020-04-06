@@ -7,6 +7,7 @@ var Messages = {
     Parse.post(message, (response) => {
       _.extend(message, response);
       Messages._data.unshift(message); // add to begining of array
+      Messages.each(MessagesView.renderMessage);
       callback();
     });
   },
