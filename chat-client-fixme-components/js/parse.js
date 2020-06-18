@@ -25,6 +25,7 @@ var Parse = {
       contentType: 'application/json',
       success: (data) => {
         console.log('Success!', data);
+        //MessagesView.render();
       },
       error: (status) => {
         console.error('chatterbox: Failed to create message', status);
